@@ -1,0 +1,7 @@
+embeddings.py
+sentence-embeddings.py
+
+#env and cache
+venv
+__pycache__
+
