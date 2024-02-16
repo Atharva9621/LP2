@@ -8,8 +8,10 @@
    cd Assignment4
    ```
 ### 2. Create Virtual Environment and Install dependancies (OPTIONAL)
-    *This step is needed only to visualize the results.*
+
    ```bash
+   #This step is needed only to visualize the results.
+
    python -m venv venv
    venv/Scripts/activate
    pip install -r requirements.txt
