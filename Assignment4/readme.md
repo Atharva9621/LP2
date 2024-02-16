@@ -8,7 +8,9 @@
    cd Assignment4
    ```
 ### 2. Create Virtual Environment and Install dependancies (OPTIONAL)
+
     *This step is needed only to visualize the results.*
+    
    ```bash
    python -m venv venv
    venv/Scripts/activate
