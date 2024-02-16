@@ -9,7 +9,9 @@
    ```
 ### 2. Create Virtual Environment and Install dependancies (OPTIONAL)
 
-    **Note:** This step is needed only to visualize the results.*
+  '''html
+    <p>This step is needed only to visualize the results.</p>
+  '''
     
    ```bash
    python -m venv venv
