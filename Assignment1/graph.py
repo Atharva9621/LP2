@@ -1,7 +1,7 @@
 from typing import List
 from collections import deque
 
-class Graph:
+class UnweightedGraph:
     def __init__(self, adj_list: List[tuple[int]] = None, graph:List[List[int]] = None, n: int = None, directed: bool="undirected") -> None:
         self.directed = directed
         if adj_list:
@@ -66,7 +66,7 @@ class Graph:
 
 
 if __name__ == "__main__":
-    g = Graph([(0, 1), (0, 2), (0, 3), (2, 4), (4, 3)], n=5, directed=True)
+    g = UnweightedGraph([(0, 1), (0, 2), (0, 3), (2, 4), (4, 3)], n=5, directed=True)
     g.display()
     print("DFS Traversal")
     g.dfsTraversal()
