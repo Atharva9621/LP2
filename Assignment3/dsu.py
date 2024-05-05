@@ -1,7 +1,7 @@
 class DisjoinSet:
     def __init__(self, n: int) -> None:
-        self.size = [1 for i in range(n)]
-        self.parent = [i for i in range(n)]
+        self.size = [1 for i in range(n+1)]
+        self.parent = [i for i in range(n+1)]
 
     def findParent(self, u):
         if self.parent[u]==u:
@@ -9,6 +9,9 @@ class DisjoinSet:
         else:
             self.parent[u] = self.findParent(self.parent[u]) #Path compression
             return self.parent[u]
+        
+    def __getitem__(self, key):
+        return self.findParent(key)
 
     def union(self, u: int, v: int)->None:
         u_par, v_par = self.findParent(u), self.findParent(v)
