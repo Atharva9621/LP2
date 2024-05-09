@@ -1,0 +1,19 @@
+<apex:page controller="GreatestController">
+    <apex:form>
+    	<apex:pageBlock title="GreatestNumberFinder">
+        	<apex:pageBlockSection>
+            	<apex:inputText value="{!num1}"/>>
+                <apex:inputText value="{!num2}"/>>
+                <apex:inputText value="{!num3}"/>>
+                <apex:commandButton value="Calculate" action="{!calculateGreatest}" rerender="result"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection>
+            	<apex:outputPanel id="result">
+                	<p>
+                        Greatest Number : {!greatest}
+                    </p>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
